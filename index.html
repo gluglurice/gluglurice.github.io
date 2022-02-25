@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"gluglurice.gitee.io","root":"/gluglurice/","images":"/gluglurice/images","scheme":"Mist","darkmode":true,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#ff8cb0","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/gluglurice/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"gluglurice.gitee.io","root":"/gluglurice/","images":"/gluglurice/images","scheme":"Mist","darkmode":true,"version":"8.9.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#ff8cb0","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/gluglurice/js/config.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="GluGluRice">
 <meta property="og:url" content="https://gluglurice.gitee.io/gluglurice/index.html">
@@ -42,7 +42,7 @@
 
 
 
-
+<link rel="dns-prefetch" href="waline-server-5hm468vas-gluglurice.vercel.app">
   <noscript>
     <link rel="stylesheet" href="/gluglurice/css/noscript.css">
   </noscript>
@@ -228,6 +228,28 @@
     </span>
 
   
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/gluglurice/2022/01/19/%E4%BB%8E%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%8F%91/#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/gluglurice/2022/01/19/%E4%BB%8E%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%8F%91/" data-xid="/gluglurice/2022/01/19/%E4%BB%8E%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%8F%91/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/gluglurice/2022/01/19/%E4%BB%8E%E5%8D%8A%E8%B7%AF%E5%87%BA%E5%8F%91/" class="post-meta-item leancloud_visitors" data-flag-title="从半路出发" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
 </div>
 
         </div>
@@ -290,6 +312,15 @@
 
 
 
-
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline-server-5hm468vas-gluglurice.vercel.app","placeholder":"请文明评论呀","avatar":"mm","pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick","mail"],"meta":["nick","mail","link"],"libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","el":"#waline-comments","path":"/gluglurice/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() => 
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script>
 </body>
 </html>
